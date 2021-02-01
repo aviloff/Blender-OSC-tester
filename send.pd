@@ -1,0 +1,12 @@
+#N canvas 540 471 247 266 12;
+#X floatatom 94 47 5 0 0 0 - - -;
+#X obj 39 145 loadbang;
+#X obj 22 224 netsend -u -b;
+#X msg 54 198 disconnect;
+#X msg 39 172 connect localhost 14010;
+#X obj 22 120 oscformat -f f command;
+#X connect 0 0 5 0;
+#X connect 1 0 4 0;
+#X connect 3 0 2 0;
+#X connect 4 0 2 0;
+#X connect 5 0 2 0;
